@@ -1,0 +1,153 @@
+article {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input,
+#service,
+textarea {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+input:focus,
+textarea:focus,
+#tema:focus {
+    outline: none;
+    border: #fa0001 2px solid;
+}
+
+input[type="file"]:focus {
+    border: none;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-input:last-child {
+    margin-right: 0;
+}
+
+.form-textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.form-submit {
+    margin-top: 10px;
+}
+
+.input-70 {
+    flex: 0 0 66%;
+}
+
+.foto-input.input-70 {
+    border: 2px solid gray;
+}
+
+.input-25 {
+    flex: 0 0 29.5%;
+}
+
+::placeholder,
+#service,
+.foto-input.input-70 label {
+    color: #fa0001;
+    font-weight: 600;
+}
+
+.foto-input.input-70 label {
+    margin-left: 10px;
+}
+
+
+
+.custom-file-input {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.selected{
+    color: black;
+    font-weight: 400;
+    font-size: 13.5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: 3px solid #fa0001;
+    background-color: #fa0001;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+
+input[type='submit']:hover {
+    background-color: white;
+    color: #fa0001;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    form {
+        width: 80%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .form-input,
+    .form-textarea,
+    .foto-input {
+        width: auto;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .foto-input {
+        padding: 10px 0;
+    }
+
+    input[type='submit'] {
+        width: 100%;
+    }
+}

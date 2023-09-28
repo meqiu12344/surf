@@ -1,0 +1,172 @@
+body {
+    width: 100%;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+header main {
+    width: 70vw;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.logo,
+.user_info,
+.logout {
+    height: 100%;
+    width: 33%;
+    text-align: center;
+}
+
+.logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+.logout a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: 100%;
+
+    width: 33.33%;
+    height: auto;
+
+    text-align: left;
+
+    border-radius: 8px;
+    border: 1px solid red;
+
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    -webkit-box-shadow: 7px 9px 42px -27px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 9px 42px -27px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 9px 42px -27px rgba(0, 0, 0, 0.75);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+span a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.end_order {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+.mail-link {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.price {
+    width: 20%;
+
+    padding-left: 0;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.price:focus {
+    outline: none;
+}
+
+.price::placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.link-header {
+    color: black;
+    font-size: 15px;
+}
+
+
+input[type="date"] {
+    padding: 3px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    font-size: 15px;
+}
+
+.set-date-submit {
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .column {
+        flex-basis: 33.33%;
+    }
+}

@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: auto;
+    height: 10vh;
+
+    margin: 10px;
+}
+
+.red-text{
+    color: red;
+}
